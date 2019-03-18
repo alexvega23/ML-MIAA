@@ -1,0 +1,17 @@
+# E12 - Gradient Boosting Review
+
+Search for and comment about the main differences between the algorithms implemented in: 
+
+(1) [ Gradient Boosting Classifier ](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html)
+
+(2) [ XGB Classifier ](https://xgboost.readthedocs.io/en/latest/python/python_intro.html)
+
+Write at least 300 words explaining the difference.
+
+Boosting builds models from individual so called “weak learners” in an iterative way. In boosting, the individual models are not built on completely random subsets of data and features but sequentially by putting more weight on instances with wrong predictions and high errors. The general idea behind this is that instances, which are hard to predict correctly (“difficult” cases) will be focused on during learning, so that the model learns from past mistakes. When we train each ensemble on a subset of the training set, we also call this Stochastic Gradient Boosting, which can help improve generalizability of our model.
+The gradient is used to minimize a loss function, similar to how Neural Nets utilize gradient descent to optimize (“learn”) weights. In each round of training, the weak learner is built and its predictions are compared to the correct outcome that we expect. The distance between prediction and truth represents the error rate of our model. These errors can now be used to calculate the gradient. The gradient is nothing fancy, it is basically the partial derivative of our loss function - so it describes the steepness of our error function. The gradient can be used to find the direction in which to change the model parameters in order to (maximally) reduce the error in the next round of training by “descending the gradient”.
+Both xgboost and gbm follows the principle of gradient boosting. There are however, the difference in modeling details. Specifically, xgboost used a more regularized model formalization to control over-fitting, which gives it better performance. The name xgboost, though, actually refers to the engineering goal to push the limit of computations resources for boosted tree algorithms. Which is the reason why many people use xgboost. For model, it might be more suitable to be called as regularized gradient boosting. In addition, the developers of xgboost have made a number of important performance enhancements to different parts of the implementation which make a big difference in speed and memory utilization:
+1.Use of sparse matrices with sparsity aware algorithms
+2. Improved data structures for better processor cache utilization which makes it faster.
+3. Better support for multicore processing which reduces overall training time.
+In other words, XGBoost is designed for scale in as its initial goal. 
