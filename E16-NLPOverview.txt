@@ -1,0 +1,57 @@
+# E14 - Natural Language Processing Overview
+
+Research for a commercial product which uses NLP as a core(E.g. google assistant) and describes, in general words, which NLP techniques it uses.
+
+(If two of you have the same commercial product, both of your grades will be penalized --- Be creative! )
+
+MonkeyLearn is an AI platform that allows you analyze text with Machine Learning to automate business workflows and save hours of manual data processing. MonkeyLearn works as follows:
+
+1.	 Connect the data
+
+You can upload CSV/Excel files or connect with your apps via direct integrations, Zapier or API. Text may come in various formats such as:
+
+Emails
+Support tickets
+Reviews
+NPS Feedback
+Surveys
+Social Media
+
+2.	Turn your text into tags
+
+Use text analysis models to tag your text automatically. Select from premade models, or 
+build your own custom classifiers and extractors, powered by machine learning.
+
+-	Classifiers are used to classify text into defined categories. 
+Eg: Sentiment, Topic, Aspects, Intent, Priority, etc.
+
+-	Extractors are used to extract pieces of data from text. 
+Eg: Keywords, Features, Names, Dates, Prices, etc.
+
+3.	Put your tags to work
+Use your MonkeyLearn tags to make new information about your business, and to build new workflows in your apps.
+-	Get insights by connecting with visualization tools like Tableau, Looker, Google Data Studio, Mode and more.
+-	Inject tags back into your existing apps so you can analyze your data or automate workflows within your apps.
+
+
+MonkeyLearns has a free plan that includes: 
+Queries per month: 300 
+Custom Models: 1 
+API speed: Low 
+Model size: Small 
+Support: Community
+
+
+Frequently questions:
+1.	What counts as a query?
+One text analyzed with one model. Eg: 1 query = get sentiment from an email.
+2.	What’s a custom model?
+A custom trainable extractor or classifier where you can define your own set of tags for Sentiment Analysis, Topic, Intent, Keywords, etc.
+3.	What if I exceed my query limit?
+You will be limited or you can opt-in to be charged for extra queries at a pro-rated price.
+4.	Do you support Batch Processing?
+Yes, you can send multiple texts (up to 200 queries) per HTTP API call. 
+5.	I need more queries or custom models, can you help?
+Sure, MonkeyLearn can offer you a volume discount. Contact them to hello@monkeylearn.com.
+6.	Do you provide on-premises solutions?
+Yes, they do. Contact them to hello@monkeylearn.com.
